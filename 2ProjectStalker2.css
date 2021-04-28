@@ -1,0 +1,419 @@
+@media(max-width:680px) {
+  .menu-main li {display: block;}
+}
+@media not print {
+  .shrinkToFit {
+    cursor: zoom-in;
+  }
+}
+
+@font-face {
+  font-family: "AmazS.T.A.L.K.E.R.v.3.0";
+  src: url("fonts/AmazS.T.A.L.K.E.R.v.3.0.ttf"); 
+  } 
+
+@media (max-width: 700px) and (min-width: 250px) {
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+@import url(https://everythingfonts.com/font/face/XE_0ZEReq_oVf9K6jKMiGQeF);
+
+
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+background: linear-gradient(to top, #4c4a49 20%, #E4E4D8 50%, #A19887 80%);
+color: #000;
+font-family: Arial, sans-serif;
+font-size: 14px;
+background: url(fotos/sb.jpg) 100%  no-repeat;
+background-size: cover;
+background-attachment: fixed;
+width: 100%;
+overflow-X: hidden;
+position: static;
+}
+
+.container{
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1, h2, h3 {
+  font-family: 'gtw';
+}
+
+ .header {                                             /*  На шапке я сдался :) */
+  margin-top: -5px;
+  flex: 1 0 auto;
+  position: static;
+  height : 180px;
+  top : 0;
+  background: #ffffff;
+  width: 140%;
+  background: url(fotos/header_destroyed2.webp) 50% no-repeat;
+  display: inline-block;
+  transform: translate(-15%);
+}
+
+nav{
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  background: #000 url(fotos/bg.png);
+  margin-top: -50px;
+  border-top: solid 40px;
+   border-image: url(fotos/pagesTop.png) 30 round round; -moz-border-image: url(fotos/pagesTop.png)  30 round round;
+            -webkit-border-image: url(fotos/pagesTop.png) 30 round round; 
+            -o-border-image: url(fotos/pagesTop.png) 30 round round;
+            border-image: url(fotos/pagesTop.png) 100 round round; border-left: none;border-right: none;
+}
+
+nav p {
+  font-family: 'gtw';
+}
+
+.menu-main {
+  list-style: none;
+  padding: 0 30px;
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+}
+.menu-main:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  bottom: -20px;
+  
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px 30px;
+  font-family: 'PT Sans Caption', sans-serif;
+  color: #bdbdbd;
+  transition: .3s linear;
+  position: relative;
+}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 3px);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F58262;
+  opacity: 0;
+  transition: .5s ease-in-out;
+}
+.menu-main a:before {left: 5px;}
+.menu-main a:after {right: 5px;}
+.menu-main a.current:before,
+.menu-main a.current:after,
+.menu-main a:hover:before, 
+.menu-main a:hover:after {opacity: 1;}
+.menu-main a.current,
+.menu-main a:hover {color: #F58262;}
+
+.info {
+  margin-top: 2vh;
+  display: inline-flex;
+  position: relative;
+  list-style: none;
+  font-size: 25px;
+  min-height: 100%;
+  
+}
+
+
+.htext {
+  text-decoration: none;
+  position: static;
+  min-height: 100%;
+  font-size: 33px;
+  font-family: 'Bungee', cursive;
+  color: #201f1f;
+  align-items: center;
+}
+
+
+ main {
+ flex: 0 0 auto;
+ width: 60vw;
+ height: 80vh;
+ text-align: center;
+ background: rgb(111, 110, 110) url(fotos/bg.png);
+ color: #c67e0a;
+ margin-top: 60vh;
+ margin-bottom: 15vh;
+ align-items: center;
+ border-bottom: #000 10px solid;
+ border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg) 30 round round; -moz-border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg)  30 round round;
+            -webkit-border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg) 30 round round; 
+            -o-border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg) 30 round round;
+            border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg) 100 round round; border-left: none;border-right: none;
+} 
+
+
+.content2 {
+ flex: 1 0 auto;
+ width: 70vw;
+ height: 75vh;
+ text-align: center;
+ background: rgb(111, 110, 110) url(fotos/bg.png);
+ color: #c67e0a;
+ margin-top: 30vh;
+ margin-bottom: 15vh;
+ align-items: center;
+ border-bottom: #000 10px solid;
+ border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg) 30 round round; -moz-border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg)  30 round round;
+            -webkit-border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg) 30 round round; 
+            -o-border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg) 30 round round;
+            border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg) 100 round round; border-left: none;border-right: none;
+
+
+}
+
+
+.con3 {
+  position: relative;
+display: inline-flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.content3 {
+
+bottom: 650px;
+}
+
+.ramka {
+  position: relative;
+  top: 275px;
+  display: block;
+  padding-top: 50vh;
+ 
+  
+}
+
+.cont {
+  background: rgb(157, 156, 156) url(fotos/maxresdefault.jpg) 100% 100% no-repeat;
+  display: block;
+ flex: 1 0 auto;
+ width: 70vw;
+ height: 70vh;
+ text-align: center;
+ color: #c67e0a;
+ margin-top: 30vh;
+ margin-bottom: 30vh;
+ align-items: center;
+  border: #000 10px solid;
+ border-image: url(fotos/depositphotos_30364045-stock-photo-rusted-steel.jpg) 100 round round;
+            -webkit-border-image: url(fotos/depositphotos_30364045-stock-photo-rusted-steel.jpg) 100 round round; 
+            -o-border-image: url(fotos/depositphotos_30364045-stock-photo-rusted-steel.jpg) 50 round round;
+            border-image: url(fotos/depositphotos_30364045-stock-photo-rusted-steel.jpg) 50 round round; border-left:  10px solid;border-right: 10px solid;
+ 
+
+}
+
+
+.g1 {
+ position: relative;
+ bottom: 400px;
+}
+
+
+.games {
+  display: block;
+}
+
+
+.game {
+position:static ;
+display: inline-block;
+width: 30vw;
+height: 50vh;
+background: #000;
+ text-align: center;
+ color: #ffe100af;
+ margin-bottom:0vh;
+  border: #000 10px solid;
+ border-image: url(fotos/depositphotos_30364045-stock-photo-rusted-steel.jpg) 100 round round;
+            -webkit-border-image: url(fotos/depositphotos_30364045-stock-photo-rusted-steel.jpg) 100 round round; 
+            -o-border-image: url(fotos/depositphotos_30364045-stock-photo-rusted-steel.jpg) 50 round round;
+            border-image: url(fotos/depositphotos_30364045-stock-photo-rusted-steel.jpg) 50 round round; border-left:  10px solid;border-right: 10px solid;
+ 
+}
+
+.v1 {
+position: relative;
+bottom: 0px;
+background: url(fotos/1582744492_stalker-shadow-of-chernobyl.jpg) 100% 100% no-repeat;
+background-size: cover;
+}
+
+.v2 {
+position: relative;
+
+background: url(fotos/i.webp) 100% 100% no-repeat;
+background-size: cover;
+
+}
+
+.v3 {
+font-size: 13.5px;
+background: url(fotos/2732902967.jpg) 100% 100% no-repeat;
+background-size: cover;
+}
+/* border: #000 10px solid;
+ border-image: url() 100 round round;
+            -webkit-border-image: url() 100 round round; 
+            -o-border-image: url() 100 round round;
+            border-image: url() 100 round round; border-left:  10px solid;border-right: 10px solid;
+  */
+
+.description {
+display: block;
+}
+
+.des {
+line-height: 25px;
+font-family: 'gtw'; 
+padding: 0;
+margin-bottom: 15vh;
+display: inline-block;
+width: 30vw;
+height: 60vh;
+border: solid 5px rgb(86, 86, 86);
+background: url(fotos/bg.png);
+/* text-transform: uppercase;
+background: linear-gradient(45deg, #af5500 33%, #ffd034e0 66%, #d6bd00);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
+color: rgb(251, 238, 185);
+border-top:none;
+}
+
+.locations {
+display: block;  
+justify-content: center;
+align-items: center;
+}
+
+
+.loc-block {
+  background: rgb(157, 156, 156) url(fotos/provodniki_Pripyat_karta.JPG) 0% 100% no-repeat;
+  display: block;
+ flex: 1 0 auto;
+ width: 70vw;
+ height: 70vh;
+ transform: translate(20%);
+ text-align: center;
+ color: #c67e0a;
+ margin-top: 30vh;
+ margin-bottom: 30vh;
+ align-items: center;
+  border: #000 10px solid;
+ border-image: url(fotos/depositphotos_30364045-stock-photo-rusted-steel.jpg) 100 round round;
+            -webkit-border-image: url(fotos/depositphotos_30364045-stock-photo-rusted-steel.jpg) 100 round round; 
+            -o-border-image: url(fotos/depositphotos_30364045-stock-photo-rusted-steel.jpg) 50 round round;
+            border-image: url(fotos/depositphotos_30364045-stock-photo-rusted-steel.jpg) 50 round round; border-left:  10px solid;border-right: 10px solid;
+ 
+}
+
+.loc {
+  font-family: 'gtw';
+  color: rgb(211, 127, 0);
+  text-align: center;
+  border: black solid 5px;
+  border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg) 30 round round; -moz-border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg)  30 round round;
+            -webkit-border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg) 30 round round; 
+            -o-border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg) 30 round round;
+            border-image: url(fotos/depositphotos_9844327-stock-photo-warning-background-texture.jpg) 100 round round; 
+  margin-left: 25px;
+  display: inline-block;
+  background: rgb(99, 97, 97);
+  width: 30vh;
+  height: 25vh;
+}
+
+.l1 {
+  color: rgb(113, 19, 19);
+background: url(fotos/3097-lokacija-pripjat-iz-lwo.jpg) 100% 100% no-repeat;
+background-size: cover;
+}
+
+.l2 {
+  background: url(fotos/xrEngine_2016-12-30_11-58-59-11.png) 50% 100% no-repeat;
+  background-size: cover;
+}
+
+.l3 {
+  background: url(fotos/scale_12700.webp) 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.l4 {
+background: url(fotos/18314156.png) 100% 100% no-repeat;
+background-size: cover;
+}
+
+.l5 {
+background: url(fotos/i9.webp) 100% 100% no-repeat;
+background-size: cover;
+}
+
+.l6 {
+background: url(fotos/ii.webp) 100% 100% no-repeat;
+background-size: cover;
+color: rgb(115, 21, 21);
+}
+
+footer {
+  background: url(fotos/bottom-b.webp) 0 0 repeat;
+}
+
+ .footer {
+   text-align: center;
+  align-items: unset;
+  position:relative;
+  padding: 102px 0 0 0;
+  flex: 0 0 auto;
+background: #404040;
+background: url(fotos/bottom-b_t.png) 50% 0 no-repeat;
+} 
+
+.footer2 {
+  background: url(fotos/bottom-b.webp) 0 0 repeat;
+  
+}
+
+
+
+
+
+
+
